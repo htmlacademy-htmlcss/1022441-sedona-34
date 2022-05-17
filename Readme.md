@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виктория Князева](https://up.htmlacademy.ru/htmlcss/34/user/1022441).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/talequale).
 
 ---
 
