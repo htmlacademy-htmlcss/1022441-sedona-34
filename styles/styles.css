@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.page-header,
+.main-index,
+.main-inner,
+.page-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navigation-list-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.navigation-list-link.link-current {
+  text-decoration: underline;
+}
+
+.intro {
+  background-image: url("../images/backgrounds/background-triangle-index.svg"), url("../images/backgrounds/background-index.jpg");
+  text-align: center;
+  padding-top: 65px;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-size: auto, 1200px 487px;
+  box-sizing: border-box;
+  min-height: 487px
+}
+
+.advantages {
+  text-align: center;
+}
+.advantages-section-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-tile {
+  background: #82B3D3;
+  color: #ffffff;
+}
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+.advantages-feature-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.advantages-feature-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.search-hotels {
+  text-align: center;
+}
+.search-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.search-description {
+  color: #333333;
+}
+
+.subscription {
+  background-image: url("../images/backgrounds/background-subscribe.jpg");
+  text-align: center;
+  color: #ffffff;
+  box-sizing: border-box;
+  height: 411px;
+  padding-top: 90px;
+}
+.subscription-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+
