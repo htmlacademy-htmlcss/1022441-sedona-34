@@ -147,3 +147,23 @@ body {
   text-decoration: none;
 }
 
+.button-socials {
+  color: #83B3D3;
+}
+.button-socials:hover {
+  color: #68A2CA;
+}
+.button-socials:active {
+  color: rgba(104, 162, 202, 0.3);
+}
+
+.htmlacademy-link {
+  color: #000000;
+}
+.htmlacademy-link:hover {
+  color: #756157;
+}
+.htmlacademy-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
