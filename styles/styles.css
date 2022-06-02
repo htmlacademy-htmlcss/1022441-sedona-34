@@ -43,6 +43,7 @@ body {
   margin: 0 auto;
 }
 
+/* Site Buttons */
 .button,
 .button:visited {
   font-size: 16px;
@@ -50,8 +51,46 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  width: 140px;
+  height: 37px;
+  border-radius: 4px;
+  padding: 9px 0 8px 0;
+  color: #FFFFFF;
+}
+.navigation-button {
+  background-color: #756157;
+  width: 160px;
+}
+.hotel-card-button-details {
+  background-color: #756157;
+}
+.hotel-card-button-to-favorites {
+  background-color: #82B3D3;
+}
+.hotel-card-button-in-favorites {
+  background-color: #7DB54F;
+}
+.apply-filters-button {
+  background-color: #82B3D3;
+  border: none;
+  height: 48px;
+  padding: 14px 15px;
+}
+.clear-filters-button {
+  background-color: transparent;
+  border: none;
+  height: 48px;
+  padding: 14px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
 }
 
+/* Main Site Navigation */
 .navigation-list-link {
   font-size: 20px;
   line-height: 26px;
