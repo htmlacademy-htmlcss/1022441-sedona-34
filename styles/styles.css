@@ -46,6 +46,7 @@ body {
 /* Site Buttons */
 .button,
 .button:visited {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -88,6 +89,15 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
+}
+.search-hotels-button {
+  border: none;
+  height: 60px;
+  width: 574px;
+  background-color: #756157;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 /* Main Site Navigation */
