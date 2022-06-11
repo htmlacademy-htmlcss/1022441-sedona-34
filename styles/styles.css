@@ -391,37 +391,35 @@ body {
 /* Page Footer */
 .page-footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 70px;
   align-items: center;
   width: 100%;
+  padding: 27px 0 16px 0;
 }
 .footer-social-list {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  width: 142px;
-  height: 40px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: 70px;
+  margin-top: 22px;
 }
 .footer-social-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 10px;
-  gap: 10px;
-  width: 47px;
-  height: 40px;
+  padding: 0;
+  margin: 0 27px 0 0;
 }
 
 .footer-contacts {
-  width: 331px;
+  flex-grow: 1;
+  text-align: center;
+  padding: 0;
+  margin:0;
 }
 .footer-contacts-phone {
+  display: block;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -429,7 +427,12 @@ body {
   text-decoration: none;
 }
 
+.footer-logo {
+  margin-right: 70px;
+  margin-top: 22px;
+}
 .button-socials {
+  display: block;
   color: #83B3D3;
 }
 .button-socials:hover {
@@ -440,6 +443,7 @@ body {
 }
 
 .htmlacademy-link {
+  display: block;
   color: #000000;
 }
 .htmlacademy-link:hover {
