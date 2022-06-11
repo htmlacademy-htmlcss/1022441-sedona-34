@@ -336,21 +336,22 @@ body {
 /* Hotels Search */
 .search-hotels {
   text-align: center;
-  height: 417px;
   box-sizing: border-box;
-  padding-top: 91px;
+  padding: 91px 300px 93px 300px;
 }
 .search-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0 0 29px 0;
 }
 .search-description {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+  margin: 0 0 55px 0;
 }
 
 .subscription,
@@ -359,8 +360,7 @@ body {
   text-align: center;
   color: #FFFFFF;
   box-sizing: border-box;
-  height: 411px;
-  padding-top: 90px;
+  padding: 94px 200px 94px 200px;
 }
 .subscription-title {
   font-size: 30px;
@@ -368,11 +368,15 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #FFFFFF;
+  padding: 0 160px;
+  margin: 0 0 29px 0;
 }
 .subscription-description {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+  padding: 0 160px;
+  margin: 0 0 46px 0;
 }
 .subscription-inner {
   background-image: none;
