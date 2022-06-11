@@ -226,26 +226,25 @@ body {
   display: flex;
   flex-flow: row wrap;
 }
-
-.advantages-list > .advantages-item {
+.advantages-list .advantages-item {
   counter-increment: advantage_counter;
   flex-basis: 400px;
-  height: 384px;
+  padding-bottom: 121px;
   background-color: rgba(131, 179, 211, 0.2);
 }
-.advantages-list > .advantages-item:nth-child(2n+1) {
+.advantages-list .advantages-item:nth-child(2n+1) {
   background-color: rgba(131, 179, 211, 0.12);
 }
-.advantages-list > .advantages-item:nth-child(1) {
+.advantages-list .advantages-item.first {
   flex-basis: 100%;
   display: flex;
   flex-flow: row wrap;
-  height: auto;
-  background-color: #FFFFFF;
+  padding-bottom: 0;
 }
-.advantages-list > .advantages-item:nth-child(2) {
+.advantages-list .advantages-item.second {
   flex-basis: 100%;
   display: flex;
+  padding-bottom: 0;
 }
 
 .advantages-tile {
@@ -284,16 +283,16 @@ body {
   margin: 0;
   padding: 0;
   counter-reset: advantage_counter;
-}
-.advantages-features > li {
-  position: relative;
-  width: 400px;
-  height: 384px;
-  box-sizing: border-box;
-  padding: 80px 85px 81px 85px;
   background-color: #FFFFFF;
 }
-.advantages-features > li:nth-child(2n+1) {
+.advantages-features .advantages-feature {
+  position: relative;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 80px 85px 75px 85px;
+  background-color: #FFFFFF;
+}
+.advantages-features .advantages-feature:nth-child(2n+1) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -313,15 +312,19 @@ body {
   height: 76px;
   background-repeat: no-repeat;
 }
-.advantages-feature:nth-child(1) .advantages-feature-title::before {
+.advantages-feature.home,
+.advantages-feature.souvenirs {
+  background-color: #FFFFFF;
+}
+.advantages-feature.home .advantages-feature-title::before {
   background-image: url("../images/icons/advantages/icon-home.svg");
   top: 80px;
 }
-.advantages-feature:nth-child(2) .advantages-feature-title::before {
+.advantages-feature.food .advantages-feature-title::before {
   top: 81px;
   background-image: url("../images/icons/advantages/icon-food.svg");
 }
-.advantages-feature:nth-child(3) .advantages-feature-title::before {
+.advantages-feature.souvenirs .advantages-feature-title::before {
   top: 78px;
   background-image: url("../images/icons/advantages/icon-souvenirs.svg");
 }
