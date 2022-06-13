@@ -148,6 +148,7 @@ body {
   height: 66px;
   width: 139px;
   max-width: 139px;
+  z-index: 100;
 }
 /* Main Site Navigation */
 .navigation {
@@ -157,11 +158,12 @@ body {
 }
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   align-items: flex-start;
   padding: 0;
   margin: 0;
-  flex-wrap: wrap;
+  z-index: 100;
 }
 .navigation-list-item {
   margin-right: 34px;
