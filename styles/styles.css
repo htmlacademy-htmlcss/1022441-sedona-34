@@ -33,15 +33,24 @@ li {
   list-style: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   height: 100%;
 }
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  padding: 0;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -51,11 +60,18 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
   max-width: 1200px;
   width: 1200px;
   margin: 0 auto;
+  min-height: 100%;
   background-color: #FFFFFF;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* Site Buttons */
@@ -201,7 +217,6 @@ body {
   text-align: center;
 }
 .advantages-section-header {
-  height: 282px;
   box-sizing: border-box;
   padding: 63px 250px 90px 250px;
 }
@@ -211,6 +226,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .advantages-section-subtitle {
   font-weight: 400;
@@ -229,7 +245,7 @@ body {
 .advantages-list .advantages-item {
   counter-increment: advantage_counter;
   flex-basis: 400px;
-  padding-bottom: 121px;
+  padding-bottom: 103px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 .advantages-list .advantages-item:nth-child(2n+1) {
@@ -255,7 +271,8 @@ body {
   color: #ffffff;
 }
 .advantages-tile .advantages-title {
-  margin-top: 0px;
+  margin-top: 3px;
+  margin-bottom: 29px;
   padding-right: 85px;
   padding-left: 85px;
 }
@@ -264,7 +281,10 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 100px;
+  padding-right: 110px;
+  padding-left: 110px;
+  margin-top: 103px;
+  margin-bottom: 29px;
 }
 
 .advantages-description {
@@ -289,7 +309,7 @@ body {
   position: relative;
   width: 400px;
   box-sizing: border-box;
-  padding: 80px 85px 75px 85px;
+  padding: 80px 80px 80px;
   background-color: #FFFFFF;
 }
 .advantages-features .advantages-feature:nth-child(2n+1) {
@@ -301,7 +321,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 102px 0 0 0;
+  margin: 104px 0 29px 0;
   padding: 0;
 }
 .advantages-feature-title::before {
@@ -318,7 +338,7 @@ body {
 }
 .advantages-feature.home .advantages-feature-title::before {
   background-image: url("../images/icons/advantages/icon-home.svg");
-  top: 80px;
+  top: 81px;
 }
 .advantages-feature.food .advantages-feature-title::before {
   top: 81px;
