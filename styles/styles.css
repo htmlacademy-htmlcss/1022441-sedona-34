@@ -737,7 +737,9 @@ body {
   width: 140px;
   margin-top: 16px;
 }
-.hotel-card-details > *:nth-child(2n+1) {
+
+.hotel-card-type,
+.hotel-card-button-details {
   margin-right: 20px;
 }
 .hotel-card-link {
@@ -764,7 +766,7 @@ body {
   box-sizing: border-box;
 }
 .hotel-card-ratings-stars {
-  margin: 0;
+  margin: 0 20px 0 0;
 }
 .hotel-card-ratings-stars span {
   background-image: url("../images/icons/icon-star.svg");
