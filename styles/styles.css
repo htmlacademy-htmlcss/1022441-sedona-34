@@ -782,9 +782,15 @@ body {
 
 .pagination-container {
   display: flex;
-  padding-top: 30px;
-  margin: 0 71px 25px 73px;
+  flex-wrap: wrap;
+  padding: 0 71px 25px 73px;
+}
+.pagination-container::before {
+  flex-grow: 1;
+  content: '';
+  width: 100%;
   border-top: 1px solid #E6E6E6;
+  margin-bottom: 30px;
 }
 .pagination {
   display: flex;
