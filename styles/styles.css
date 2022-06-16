@@ -710,6 +710,9 @@ body {
 .select-control:active {
   border-color: #3F5E72;
 }
+.select-control:disabled {
+  border-color: #E5E5E5;
+}
 .select-control option {
   font-weight:normal;
   background: #FFFFFF;
