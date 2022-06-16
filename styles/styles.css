@@ -674,26 +674,62 @@ body {
 
 .select-control {
   height: 49px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  background-color: white;
   outline: none;
   color: #333333;
   margin: 0;
-  padding: 0;
+  padding: 12px 48px 11px 19px;
+  box-shadow: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #FFFFFF;
+  background-image: url("../images/icons/icon-arrow-bottom.svg"), linear-gradient(to bottom, #ffffff 0%,#ffffff 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 18px top 50%, 0 0;
+  background-size: 12px auto, 100%;
+}
+.select-control::-ms-expand {
+  display: none;
+}
+.select-control:hover {
+  border-color: #68A2CA;
+}
+.select-control:focus {
+  border-color: #68A2CA;
+  box-shadow: none;
+  outline: none;
+}
+.select-control:active {
+  border-color: #3F5E72;
+}
+.select-control option {
+  font-weight:normal;
+  background: #FFFFFF;
+  color: #333333;
+  padding: 10px;
+}
+
+*[dir="rtl"] .select-control,
+:root:lang(ar) .select-control,
+:root:lang(iw) .select-control {
+  background-position: left 18px top 50%, 0 0;
+  padding: 12px 19px 11px 48px;
 }
 
 .sorting-select {
   width: 290px;
-  padding: 12px 15px 12px;
   margin-right: 70px;
 }
 .pagination-select {
   width: 160px;
-  padding: 14px 20px;
   margin-left: 47px;
 }
 
