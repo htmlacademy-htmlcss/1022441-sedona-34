@@ -180,19 +180,20 @@ body {
 }
 .navigation-list-item {
   margin-right: 34px;
-  padding-top: 20px;
-  padding-bottom: 18px;
 }
 .navigation-list-item.item-current {
   border-bottom: 2px solid #756257;
 }
 .navigation-list-link {
+  display: block;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-transform: capitalize;
   text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 18px;
 }
 
 .navigation-user {
@@ -202,7 +203,7 @@ body {
 }
 .navigation-user-item {
   align-self: center;
-  margin-right: 22px;
+  margin-right: 4px;
 }
 .navigation-user-item:last-child {
   margin-right: 0;
@@ -211,17 +212,16 @@ body {
 .navigation-user-link {
   display: block;
   color: #000000;
-  width: 19px;
-  height: 19px;
-  text-align: center;
+  padding: 9px;
 }
 .navigation-button {
-  margin-left: 10px;
+  margin-left: 19px;
 }
 
 /* Main Page Content Elements */
 /*                            */
-.main-index {
+.main-index,
+.main-inner {
   margin-top: -1px;
 }
 .intro {
