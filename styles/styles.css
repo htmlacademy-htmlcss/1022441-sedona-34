@@ -378,21 +378,26 @@ body {
 .search-hotels {
   text-align: center;
   box-sizing: border-box;
-  padding: 91px 300px 93px 300px;
+  padding: 91px 40px 93px;
 }
 .search-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 0 29px 0;
+  box-sizing: border-box;
+  margin: 0 auto 29px;
+  width: 500px;
+  text-align: center;
 }
 .search-description {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   color: #333333;
-  margin: 0 0 56px 0;
+  margin: 0 auto 56px;
+  width: 650px;
+  text-align: center;
 }
 
 /* Subscription Form */
@@ -412,7 +417,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
-  width: 404px;
+  width: 500px;
   margin: 0 auto 29px;
 }
 .subscription-description {
@@ -420,7 +425,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
-  width: 475px;
+  width: 500px;
   margin: 0 auto 46px;
 }
 .subscription-inner {
@@ -669,26 +674,65 @@ body {
 
 .select-control {
   height: 49px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  background-color: white;
   outline: none;
   color: #333333;
   margin: 0;
-  padding: 0;
+  padding: 12px 48px 11px 19px;
+  box-shadow: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #FFFFFF;
+  background-image: url("../images/icons/icon-arrow-bottom.svg"), linear-gradient(to bottom, #ffffff 0%,#ffffff 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 18px top 50%, 0 0;
+  background-size: 12px auto, 100%;
+}
+.select-control::-ms-expand {
+  display: none;
+}
+.select-control:hover {
+  border-color: #68A2CA;
+}
+.select-control:focus {
+  border-color: #68A2CA;
+  box-shadow: none;
+  outline: none;
+}
+.select-control:active {
+  border-color: #3F5E72;
+}
+.select-control:disabled {
+  border-color: #E5E5E5;
+}
+.select-control option {
+  font-weight:normal;
+  background: #FFFFFF;
+  color: #333333;
+  padding: 10px;
+}
+
+*[dir="rtl"] .select-control,
+:root:lang(ar) .select-control,
+:root:lang(iw) .select-control {
+  background-position: left 18px top 50%, 0 0;
+  padding: 12px 19px 11px 48px;
 }
 
 .sorting-select {
   width: 290px;
-  padding: 12px 15px 12px;
   margin-right: 70px;
 }
 .pagination-select {
   width: 160px;
-  padding: 14px 20px;
   margin-left: 47px;
 }
 
@@ -782,9 +826,15 @@ body {
 
 .pagination-container {
   display: flex;
-  padding-top: 30px;
-  margin: 0 71px 25px 73px;
+  flex-wrap: wrap;
+  padding: 0 71px 25px 73px;
+}
+.pagination-container::before {
+  flex-grow: 1;
+  content: '';
+  width: 100%;
   border-top: 1px solid #E6E6E6;
+  margin-bottom: 30px;
 }
 .pagination {
   display: flex;
