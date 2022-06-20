@@ -180,19 +180,20 @@ body {
 }
 .navigation-list-item {
   margin-right: 34px;
-  padding-top: 20px;
-  padding-bottom: 18px;
 }
 .navigation-list-item.item-current {
   border-bottom: 2px solid #756257;
 }
 .navigation-list-link {
+  display: block;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-transform: capitalize;
   text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 18px;
 }
 
 .navigation-user {
@@ -202,7 +203,7 @@ body {
 }
 .navigation-user-item {
   align-self: center;
-  margin-right: 22px;
+  margin-right: 4px;
 }
 .navigation-user-item:last-child {
   margin-right: 0;
@@ -211,17 +212,16 @@ body {
 .navigation-user-link {
   display: block;
   color: #000000;
-  width: 19px;
-  height: 19px;
-  text-align: center;
+  padding: 9px;
 }
 .navigation-button {
-  margin-left: 10px;
+  margin-left: 19px;
 }
 
 /* Main Page Content Elements */
 /*                            */
-.main-index {
+.main-index,
+.main-inner {
   margin-top: -1px;
 }
 .intro {
@@ -749,11 +749,14 @@ body {
   line-height: 36px;
   text-transform: uppercase;
 }
+
 .hotels-list {
-  display: flex;
-  flex-flow: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 0 18px;
   padding-left: 73px;
   padding-right: 53px;
+  margin: 0 0 66px 0;
 }
 
 /* Hotel Card */
@@ -762,11 +765,11 @@ body {
   box-sizing: border-box;
   width: 340px;
   padding: 20px;
-  margin: 0 18px 30px 0;
 }
 .hotel-card-details {
-  display: flex;
-  flex-flow: wrap;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
 }
 .hotel-card-type,
 .hotel-card-price,
@@ -775,23 +778,24 @@ body {
 .button.hotel-card-button-in-favorites,
 .hotel-card-ratings-stars,
 .hotel-card-ratings-text {
-  flex-grow: 1;
-  align-self: center;
   display: block;
   width: 140px;
-  margin-top: 16px;
+  align-self: center;
 }
 
-.hotel-card-type,
-.hotel-card-button-details {
-  margin-right: 20px;
-}
 .hotel-card-link {
+  display: block;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   text-decoration: none;
+}
+.hotel-card-image {
+  display: block;
+}
+.hotel-card-title {
+  margin: 17px 0 15px;
 }
 .hotel-card-type,
 .hotel-card-price {
