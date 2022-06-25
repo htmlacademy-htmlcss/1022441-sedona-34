@@ -210,9 +210,23 @@ body {
 }
 
 .navigation-user-link {
+  position: relative;
   display: block;
   color: #000000;
   padding: 9px;
+}
+.badge {
+  display: block;
+  position: absolute;
+  right: -5px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius: 10px;
+  font-size: 10px;
+  color: #FFFFFF;
+  text-align: center;
 }
 .navigation-button {
   margin-left: 19px;
@@ -489,12 +503,26 @@ body {
   margin-top: 6px;
 }
 .footer-social-item {
+  box-sizing: border-box;
+  min-width: 47px;
+  height: 40px;
+  padding: 0 0 2px 0;
+}
+.button-socials {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0 27px 0 0;
+  height: 100%;
+}
+
+.button-socials {
+  color: #83B3D3;
+}
+.button-socials:hover {
+  color: #68A2CA;
+}
+.button-socials:active {
+  color: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts {
@@ -514,16 +542,7 @@ body {
 .footer-logo {
   margin: 9px 0 0 0;
 }
-.button-socials {
-  display: block;
-  color: #83B3D3;
-}
-.button-socials:hover {
-  color: #68A2CA;
-}
-.button-socials:active {
-  color: rgba(104, 162, 202, 0.3);
-}
+
 
 .htmlacademy-link {
   display: block;
@@ -752,7 +771,7 @@ body {
 
 .hotels-list {
   display: grid;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: repeat(3, 340px);
   gap: 0 18px;
   padding-left: 73px;
   padding-right: 53px;
@@ -871,7 +890,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
-
 }
 .pagination-item.current {
   background-color: #F2F2F2;
