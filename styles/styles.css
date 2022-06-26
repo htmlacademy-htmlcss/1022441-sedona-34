@@ -662,7 +662,6 @@ body {
 }
 
 
-
 /* Range */
 
 .range {
@@ -677,7 +676,7 @@ body {
 
 .catalog-filter-label {
   display: flex;
-  border: 2px solid #fff;
+  border: 2px solid #FFFFFF;
   border-radius: 4px 0 0 4px;
 }
 .catalog-filter-label:nth-child(2) {
@@ -686,7 +685,7 @@ body {
   border-radius: 0 4px 4px 0;
 }
 .catalog-filter-label:focus-within {
-  box-shadow: 0 0 0 3px #acf, 0 0 0 3px #acf inset;
+  box-shadow: 0 0 0 3px #81B3D2, 0 0 0 3px #81B3D2 inset;
   z-index: 1;
 }
 .catalog-filter-label:active {
@@ -694,71 +693,67 @@ body {
 }
 
 .range-input {
-width: 109px;
-height: 44px;
-box-sizing: border-box;
-padding: 2px 10px 2px 18px;
-border: none;
-color: white;
-outline: none;
-background-color: transparent;
-font-family: inherit;
-font-size: 18px;
-font-weight: 400;
+  width: 109px;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 2px 10px 2px 18px;
+  border: none;
+  color: #FFFFFF;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
 }
 .range-input-text {
-padding: 2px 14px 2px 0;
-color: gray;
-line-height: 40px;
+  padding: 2px 14px 2px 0;
+  color: rgba(255,255,255, 0.3);
+  line-height: 40px;
 }
 .range-scale-wrapper {
-padding: 0 10px;
-box-sizing: border-box;
-background-color: rgba(255,255,255, 0.3);
+  padding: 0 10px;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255, 0.3);
 }
 .range-scale {
-position: relative;
-height: 4px;
+  position: relative;
+  height: 4px;
 }
 
 .range-bar {
-position: absolute;
-top: 0;
-height: 4px;
-background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  height: 4px;
+  background-color: #FFFFFF;
 }
 
 .range-toggle {
-position: absolute;
-width: 20px;
-height: 20px;
-background-color: #FFFFFF;
-border: 2px solid #FFFFFF;
-border-radius: 5px;
-cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
 .range-toggle:hover {
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
-
 .range-toggle:active {
-outline: 2px solid #83B3D3;
-box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 .range-toggle:focus {
-outline: 3px solid #83B3D3;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
-
 .toggle-min {
-top: -8px;
-left: -10px;
+  top: -8px;
+  left: -10px;
 }
-
 .toggle-max {
-top: -8px;
-right: -10px;
+  top: -8px;
+  right: -10px;
 }
 
 /* Select Controls */
