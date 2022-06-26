@@ -99,13 +99,30 @@
             <div class="form-group-column second">
               <fieldset class="hotels-filter-group">
                 <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-                <div class="range-input-container">
-                  <input type="text" class="range-value-input" value="0">
-                  <span class="range-value-text border">от</span>
-                  <input type="text" class="range-value-input"  value="9000">
-                  <span class="range-value-text">до</span>
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      <input type="text" class="range-input" value="0" name="min-price">
+                      <span class="range-input-text">от</span>
+                    </label>
+                    <label class="catalog-filter-label">
+                      <input type="text" class="range-input" value="9000" name="max-price">
+                      <span class="range-input-text">до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale-wrapper">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0%; width: 85%">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <input type="range" class="range-control">
               </fieldset>
               <div class="buttons-group">
                 <button class="button apply-filters-button" type="submit">Применить</button>
