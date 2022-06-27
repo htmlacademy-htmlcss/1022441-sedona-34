@@ -832,6 +832,8 @@ body {
 }
 .select-control:disabled {
   border-color: #E5E5E5;
+  color: rgba(0, 0, 0, 0.3);
+  background-image: url("../images/icons/icon-arrow-bottom-disabled.svg");
 }
 .select-control option {
   font-weight:normal;
@@ -964,13 +966,13 @@ body {
   min-width: 60px;
   min-height: 60px;
   margin-right: 8px;
-  background: #82B3D3;
   border: 1px solid #82B3D3;
   border-radius: 4px;
 }
 .pagination-item:last-child {
   margin-right: 0;
 }
+
 .pagination-link {
   display: block;
   text-align: center;
@@ -988,6 +990,9 @@ body {
 }
 .pagination-item.current .pagination-link {
   color: #000000;
+}
+.pagination-item:active .pagination-link {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-settings {
