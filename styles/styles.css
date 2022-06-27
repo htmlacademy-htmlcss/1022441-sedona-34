@@ -103,43 +103,82 @@ body {
   text-decoration: none;
   display: inline-block;
   text-align: center;
+  min-width: 160px;
   box-sizing: border-box;
-  width: 140px;
-  height: 37px;
   border-radius: 4px;
-  padding: 9px 0 8px 0;
+  padding: 9px 15px 8px;
   color: #FFFFFF;
   cursor: pointer;
 }
+.button:focus-visible {
+  outline: none;
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.button.disabled {
+  background-color: #E5E5E5;
+  cursor: not-allowed;
+}
 
-.navigation-button {
-  background-color: #756157;
-  width: 160px;
-}
-.hotel-card-button-details {
+.button-brown,
+.button-brown:active {
   background-color: #756157;
 }
-.hotel-card-button-to-favorites {
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #615048;
+}
+.button-blue,
+.button-blue:active {
   background-color: #82B3D3;
 }
-.hotel-card-button-in-favorites {
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #68A2CA;
+}
+.button-green,
+.button-green:active {
   background-color: #7DB54F;
 }
+.button-green:hover,
+.button-green:focus {
+  background-color: #6C9E42;
+}
+
 .apply-filters-button {
   background-color: #82B3D3;
   border: none;
-  height: 48px;
-  padding: 14px 15px;
+  line-height: 20px;
+  padding: 14px 35px;
+  margin-bottom: 17px;
 }
+
 .clear-filters-button {
   background-color: transparent;
+  box-sizing: border-box;
   border: none;
-  width: 140px;
+  text-transform: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  width: fit-content;
   height: auto;
+  margin: 0 auto;
   font-weight: normal;
-  padding: 0;
-  margin: 20px 0 0 0;
+  padding: 3px 12px 3px 10px;
 }
+.clear-filters-button:hover {
+  color: rgba(255, 255, 255, 0.6);;
+}
+.clear-filters-button:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+.clear-filters-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .search-hotels-button {
   border: none;
   height: 60px;
@@ -649,7 +688,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   text-transform: capitalize;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 .hotels-filter-item {
   margin-bottom: 15px;
@@ -857,15 +896,10 @@ body {
   grid-template-columns: 140px 140px;
   gap: 16px 20px;
 }
-.hotel-card-type,
-.hotel-card-price,
-.button.hotel-card-button-details,
-.button.hotel-card-button-to-favorites,
-.button.hotel-card-button-in-favorites,
-.hotel-card-ratings-stars,
-.hotel-card-ratings-text {
-  display: block;
-  width: 140px;
+.hotel-card-button {
+  min-width: 140px;
+}
+.hotel-card-ratings-stars {
   align-self: center;
 }
 
