@@ -1020,7 +1020,6 @@ body {
 .button-view:focus {
   border-color: #68A2CA;
 }
-/*************************/
 
 /* Checkbox Control */
 .control {
@@ -1051,4 +1050,19 @@ body {
   background-image: url("../images/icons/icon-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* Radio Control */
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
 }
