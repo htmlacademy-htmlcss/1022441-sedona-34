@@ -1022,4 +1022,33 @@ body {
 }
 /*************************/
 
-
+/* Checkbox Control */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 39px;
+}
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+.control:active .control-mark {
+  background: rgba(255, 255, 255, 0.3);
+}
+.control:hover .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+}
+.control:focus-within .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+}
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/icons/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
