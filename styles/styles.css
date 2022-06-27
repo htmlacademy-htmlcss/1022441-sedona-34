@@ -147,7 +147,6 @@ body {
 }
 
 .apply-filters-button {
-  background-color: #82B3D3;
   border: none;
   line-height: 20px;
   padding: 14px 35px;
@@ -177,13 +176,11 @@ body {
 .clear-filters-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
-
-
-.search-hotels-button {
+.search-button {
   border: none;
-  height: 60px;
-  width: 574px;
-  background-color: #756157;
+  box-sizing: border-box;
+  min-width: 574px;
+  padding: 12px 15px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -509,12 +506,10 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
-.subscription-form-button {
-  height: 60px;
-  width: 200px;
-  box-sizing: border-box;
+.subscription-button {
+  min-width: 200px;
   padding: 12px 15px;
-  background: #82B3D3;
+  box-sizing: border-box;
   border: none;
   border-radius: 0 10px 10px 0;
   outline: none;
