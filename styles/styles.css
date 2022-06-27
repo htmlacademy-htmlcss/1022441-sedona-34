@@ -1027,6 +1027,7 @@ body {
   display: block;
   padding-left: 39px;
 }
+
 .control-mark {
   position: absolute;
   top: 0;
@@ -1066,3 +1067,12 @@ body {
   border-radius: 50%;
   content: "";
 }
+.control-input[type="radio"]:disabled + .control-mark,
+.control-input[type="checkbox"]:disabled + .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+}
+.control-input[type="radio"]:disabled + .control-mark + .control-label,
+.control-input[type="checkbox"]:disabled + .control-mark + .control-label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
