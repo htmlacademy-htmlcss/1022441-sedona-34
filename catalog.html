@@ -30,13 +30,14 @@
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">
                 <span class="visually-hidden">Избранное</span>
+                <span class="badge">12</span>
                 <svg class="navigation-icon" width="19" height="17" viewBox="0 0 19 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.57663 17C9.27578 17 8.97493 16.9 8.77436 16.6C3.35903 10.5 2.05534 9.1 1.75449 8.7C1.0525 7.8 0.651367 6.6 0.651367 5.4C0.651367 2.4 3.05818 0 6.16698 0C7.47067 0 8.67407 0.5 9.67691 1.3C10.6797 0.5 11.9834 0 13.1868 0C16.1954 0 18.7025 2.4 18.7025 5.4C18.7025 6.7 18.201 7.9 17.3988 8.8L10.3789 16.7C10.1783 16.9 9.97776 17 9.57663 17ZM3.5596 7.5C3.86045 7.9 7.06953 11.5 9.67691 14.4L15.8945 7.4C16.3959 6.9 16.5965 6.2 16.5965 5.4C16.5965 3.6 15.0922 2.1 13.2871 2.1C12.2843 2.1 11.2815 2.6 10.5795 3.4C10.2786 3.7 9.97776 3.8 9.67691 3.8C9.37606 3.8 9.07521 3.6 8.87464 3.4C8.17265 2.6 7.16982 2.1 6.16698 2.1C4.36187 2.1 2.85761 3.6 2.85761 5.4C2.75733 6.3 3.15846 7 3.5596 7.5C3.45931 7.5 3.45931 7.5 3.5596 7.5Z"/>
                 </svg>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a href="#" class="button navigation-button">Хочу сюда!</a>
+              <a href="#" class="button button-brown navigation-button">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -59,17 +60,23 @@
                 <ul class="hotels-filter-list">
                   <li class="hotels-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн
+                      <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="hotels-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                      <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="hotels-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+                      <input class="visually-hidden control-input" type="checkbox" name="wi-fi" disabled>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -79,17 +86,23 @@
                 <ul class="hotels-filter-list">
                   <li class="hotels-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-type" value="hotel" checked>Гостиница
+                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="hotel" disabled>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="hotels-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-type" value="motel">Мотель
+                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="motel" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="hotels-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-type" value="apartments">Апартаменты
+                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="apartments">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -98,16 +111,33 @@
             <div class="form-group-column second">
               <fieldset class="hotels-filter-group">
                 <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-                <div class="range-input-container">
-                  <input type="text" class="range-value-input" value="0">
-                  <span class="range-value-text border">от</span>
-                  <input type="text" class="range-value-input"  value="9000">
-                  <span class="range-value-text">до</span>
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      <input type="text" class="range-input" value="0" name="min-price">
+                      <span class="range-input-text">от</span>
+                    </label>
+                    <label class="catalog-filter-label">
+                      <input type="text" class="range-input" value="9000" name="max-price">
+                      <span class="range-input-text">до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale-wrapper">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0%; width: 85%">
+                        <button type="button" class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену</span>
+                        </button>
+                        <button type="button" class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <input type="range" class="range-control">
               </fieldset>
               <div class="buttons-group">
-                <button class="button apply-filters-button" type="submit">Применить</button>
+                <button class="button button-blue apply-filters-button" type="submit">Применить</button>
                 <button class="button clear-filters-button" type="reset">Сбросить</button>
               </div>
             </div>
@@ -146,8 +176,8 @@
               <div class="hotel-card-details">
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 4000 ₽</span>
-                <a class="button hotel-card-button-details" href="#">Подробнее</a>
-                <a class="button hotel-card-button-to-favorites" href="#">В избранное</a>
+                <a class="button hotel-card-button disabled">Подробнее</a>
+                <a class="button hotel-card-button button-blue" href="#">В избранное</a>
                 <div class="hotel-card-ratings-stars">
                   <span></span>
                   <span></span>
@@ -165,8 +195,8 @@
               <div class="hotel-card-details">
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 5000 ₽</span>
-                <a class="button hotel-card-button-details" href="#">Подробнее</a>
-                <a class="button hotel-card-button-in-favorites" href="#">В избранном</a>
+                <a class="button hotel-card-button button-brown" href="#">Подробнее</a>
+                <a class="button hotel-card-button button-green" href="#">В избранном</a>
                 <div class="hotel-card-ratings-stars">
                   <span></span>
                   <span></span>
@@ -184,8 +214,8 @@
               <div class="hotel-card-details">
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 2500 ₽</span>
-                <a class="button hotel-card-button-details" href="#">Подробнее</a>
-                <a class="button hotel-card-button-to-favorites" href="#">В избранное</a>
+                <a class="button hotel-card-button button-brown" href="#">Подробнее</a>
+                <a class="button hotel-card-button button-blue" href="#">В избранное</a>
                 <div class="hotel-card-ratings-stars">
                   <span></span>
                   <span></span>
@@ -202,8 +232,8 @@
               <div class="hotel-card-details">
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 1500 ₽</span>
-                <a class="button hotel-card-button-details" href="#">Подробнее</a>
-                <a class="button hotel-card-button-to-favorites" href="#">В избранное</a>
+                <a class="button hotel-card-button button-brown" href="#">Подробнее</a>
+                <a class="button hotel-card-button button-blue" href="#">В избранное</a>
                 <div class="hotel-card-ratings-stars">
                   <span></span>
                   <span></span>
@@ -217,19 +247,19 @@
               <li class="pagination-item current">
                 <a class="pagination-link">1</a>
               </li>
-              <li class="pagination-item">
+              <li class="pagination-item button-blue">
                 <a class="pagination-link" href="#">2</a>
               </li>
-              <li class="pagination-item">
+              <li class="pagination-item button-blue">
                 <a class="pagination-link" href="#">3</a>
               </li>
-              <li class="pagination-item">
+              <li class="pagination-item button-blue">
                 <a class="pagination-link" href="#">4</a>
               </li>
-              <li class="pagination-item">
+              <li class="pagination-item button-blue">
                 <a class="pagination-link" href="#">...</a>
               </li>
-              <li class="pagination-item">
+              <li class="pagination-item button-blue">
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
@@ -250,7 +280,7 @@
           <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru" class="subscription-form" method="post">
             <input class="subscription-form-input" type="email" name="subscription-form-email" placeholder="Ваш e-mail">
-            <button class="button subscription-form-button" type="submit">ПОДПИСАТЬСЯ</button>
+            <button class="button button-blue subscription-button" type="submit">ПОДПИСАТЬСЯ</button>
           </form>
         </section>
       </main>
