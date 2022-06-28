@@ -572,17 +572,24 @@ body {
   color: #000000;
   text-decoration: none;
 }
+.footer-contacts-phone:hover,
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
 
 .footer-logo {
   margin: 9px 0 0 0;
 }
 
-
 .htmlacademy-link {
   display: block;
   color: #000000;
 }
-.htmlacademy-link:hover {
+.htmlacademy-link:hover,
+.htmlacademy-link:focus {
   color: #756157;
 }
 .htmlacademy-link:active {
@@ -590,8 +597,6 @@ body {
 }
 
 /* Hotels Page */
-
-
 
 .inner-header {
   background-image: url("../images/backgrounds/background-catalog.jpg");
