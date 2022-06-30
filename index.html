@@ -166,5 +166,58 @@
     </p>
   </footer>
 </div>
+<div class="modal-container">
+  <div class="modal modal-hotel-search">
+    <button class="modal-close-button" type="button">
+      <span class="visually-hidden">Закрыть</span>
+      <span class="icon-close"></span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <form class="modal-hotel-search-form">
+        <label for="date_in">Дата заезда:</label>
+        <input type="hidden" name="date_in" />
+        <button id="date_in" class="date-field" type="button">
+          <span class="date-value">27 апреля 2020</span>
+          <span class="calendar"></span>
+        </button>
+        <p class="field-info error">Мы не можем отправить вас в прошлое.</p>
+        <label for="date_out">Дата выезда:</label>
+        <input type="hidden" name="date_out" />
+        <button id="date_out" class="date-field" type="button">
+          <span class="date-value">1 сентября 2021</span>
+          <span class="calendar"></span>
+        </button>
+        <p class="field-info">На эти даты есть свободные номера. Пока есть.</p>
+        <label for="adults">Взрослые:</label>
+        <div class="count-field">
+          <div class="counter-button-wrapper">
+            <button type="button" class="counter-button"><span class="decrement"></span></button>
+          </div>
+          <input id="adults" name="adults" type="text" class="count-input" value="2" />
+          <div class="counter-button-wrapper">
+            <button type="button" class="counter-button"><span class="increment"></span></button>
+          </div>
+        </div>
+        <label for="children" class="children-label">
+          <span>Дети:</span>
+          <button class="tooltip-toggle" type="button" aria-labelledby="children-tooltip-label">
+            <span class="children-info-popup" role="tooltip" id="children-tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+          </button>
+        </label>
+        <div class="count-field">
+          <div class="counter-button-wrapper">
+            <button type="button" class="counter-button"><span class="decrement"></span></button>
+          </div>
+          <input id="children" name="children" type="text" class="count-input" value="1" />
+          <div class="counter-button-wrapper">
+            <button type="button" class="counter-button"><span class="increment"></span></button>
+          </div>
+        </div>
+        <button type="submit" class="button button-blue button-submit">Найти</button>
+      </form>
+    </section>
+  </div>
+</div>
 </body>
 </html>
