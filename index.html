@@ -22,7 +22,7 @@
         <li class="navigation-user-item">
           <a class="navigation-user-link" href="#">
             <span class="visually-hidden">Поиск</span>
-            <svg class="navigation-icon" width="19" height="19" viewBox="0 0 19 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg class="navigation-icon search" width="19" height="19" viewBox="0 0 19 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M18.1585 17.05L14.448 13.35C15.4508 12.05 16.1528 10.35 16.1528 8.44995C16.1528 4.04995 12.5426 0.449951 8.13013 0.449951C3.71764 0.449951 0.107422 4.14995 0.107422 8.54995C0.107422 12.95 3.71764 16.55 8.13013 16.55C9.93524 16.55 11.6401 15.95 13.044 14.85L16.7545 18.55L18.1585 17.05ZM8.13013 14.55C4.82076 14.55 2.1131 11.85 2.1131 8.54995C2.1131 5.24995 4.82076 2.54995 8.13013 2.54995C11.4395 2.54995 14.1472 5.24995 14.1472 8.54995C14.1472 11.85 11.4395 14.55 8.13013 14.55Z"/>
             </svg>
           </a>
@@ -31,7 +31,7 @@
           <a class="navigation-user-link" href="#">
             <span class="visually-hidden">Избранное</span>
             <span class="badge">12</span>
-            <svg class="navigation-icon" width="19" height="17" viewBox="0 0 19 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg class="navigation-icon favourite" width="19" height="17" viewBox="0 0 19 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.57663 17C9.27578 17 8.97493 16.9 8.77436 16.6C3.35903 10.5 2.05534 9.1 1.75449 8.7C1.0525 7.8 0.651367 6.6 0.651367 5.4C0.651367 2.4 3.05818 0 6.16698 0C7.47067 0 8.67407 0.5 9.67691 1.3C10.6797 0.5 11.9834 0 13.1868 0C16.1954 0 18.7025 2.4 18.7025 5.4C18.7025 6.7 18.201 7.9 17.3988 8.8L10.3789 16.7C10.1783 16.9 9.97776 17 9.57663 17ZM3.5596 7.5C3.86045 7.9 7.06953 11.5 9.67691 14.4L15.8945 7.4C16.3959 6.9 16.5965 6.2 16.5965 5.4C16.5965 3.6 15.0922 2.1 13.2871 2.1C12.2843 2.1 11.2815 2.6 10.5795 3.4C10.2786 3.7 9.97776 3.8 9.67691 3.8C9.37606 3.8 9.07521 3.6 8.87464 3.4C8.17265 2.6 7.16982 2.1 6.16698 2.1C4.36187 2.1 2.85761 3.6 2.85761 5.4C2.75733 6.3 3.15846 7 3.5596 7.5C3.45931 7.5 3.45931 7.5 3.5596 7.5Z"/>
             </svg>
           </a>
@@ -77,8 +77,8 @@
         <li class="advantages-item has-image">
           <img class="advantages-image" src="images/photos/photo-02.jpg" width="800" height="384">
           <div class="advantages-tile">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
+            <p class="advantages-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br>разумеется</p>
           </div>
         </li>
         <li class="advantages-item">
@@ -98,7 +98,7 @@
     <section class="search-hotels">
       <h2 class="visually-hidden">Поиск отеля</h2>
       <p class="search-title">Заинтересовались?</p>
-      <p class="search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p class="search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="button button-brown search-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     </section>
     <section class="subscription">
@@ -166,7 +166,7 @@
     </p>
   </footer>
 </div>
-<div class="modal-container">
+<div class="modal-container" style="display: none">
   <div class="modal modal-hotel-search">
     <button class="modal-close-button" type="button">
       <span class="visually-hidden">Закрыть</span>
@@ -175,21 +175,21 @@
     <section class="modal-content">
       <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
       <form class="modal-hotel-search-form">
-        <label for="date_in">Дата заезда:</label>
+        <label for="date_in" class="modal-label">Дата заезда:</label>
         <input type="hidden" name="date_in" />
         <button id="date_in" class="date-field" type="button">
           <span class="date-value">27 апреля 2020</span>
           <span class="calendar"></span>
         </button>
         <p class="field-info error">Мы не можем отправить вас в прошлое.</p>
-        <label for="date_out">Дата выезда:</label>
+        <label for="date_out" class="modal-label">Дата выезда:</label>
         <input type="hidden" name="date_out" />
         <button id="date_out" class="date-field" type="button">
           <span class="date-value">1 сентября 2021</span>
           <span class="calendar"></span>
         </button>
         <p class="field-info">На эти даты есть свободные номера. Пока есть.</p>
-        <label for="adults">Взрослые:</label>
+        <label for="adults" class="modal-label">Взрослые:</label>
         <div class="count-field">
           <div class="counter-button-wrapper">
             <button type="button" class="counter-button"><span class="decrement"></span></button>
@@ -199,12 +199,10 @@
             <button type="button" class="counter-button"><span class="increment"></span></button>
           </div>
         </div>
-        <label for="children" class="children-label">
-          <span>Дети:</span>
-          <button class="tooltip-toggle" type="button" aria-labelledby="children-tooltip-label">
-            <span class="children-info-popup" role="tooltip" id="children-tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-          </button>
-        </label>
+        <label for="children" class="modal-label children-label">Дети:</label>
+        <button class="tooltip-toggle" type="button" aria-labelledby="children-tooltip-label">
+          <span class="children-info-popup" role="tooltip" id="children-tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+        </button>
         <div class="count-field">
           <div class="counter-button-wrapper">
             <button type="button" class="counter-button"><span class="decrement"></span></button>

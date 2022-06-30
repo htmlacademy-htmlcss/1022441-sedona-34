@@ -92,8 +92,10 @@ body {
   flex-grow: 1;
 }
 
-/* Site Buttons */
-button {
+/* Site Controls */
+button,
+input {
+  background-color: transparent;
   font-family: inherit;
 }
 .button,
@@ -202,6 +204,9 @@ button {
   max-width: 139px;
   z-index: 100;
 }
+.page-header-logo:focus {
+  outline: none;
+}
 /* Main Site Navigation */
 .navigation {
   display: flex;
@@ -234,18 +239,19 @@ button {
   padding-top: 20px;
   padding-bottom: 18px;
 }
-
+.navigation-list-link:focus {
+  outline: none;
+}
 .navigation-user {
   display: flex;
   margin: 0 0 0 auto;
   padding: 0;
 }
 .navigation-user-item {
-  align-self: center;
-  margin-right: 4px;
+  margin: 14px 4px 0 0;
 }
 .navigation-user-item:last-child {
-  margin-right: 0;
+  margin: 14px 0 0 0;
 }
 
 .navigation-user-link {
@@ -254,11 +260,20 @@ button {
   color: #000000;
   padding: 9px;
 }
+.navigation-user-link:focus {
+  outline: none;
+}
+.navigation-icon.search {
+  margin-top: 0;
+}
+.navigation-icon.favourite {
+  margin-top: 1px;
+}
 .badge {
   display: block;
   position: absolute;
   right: -5px;
-  top: 3px;
+  top: 1px;
   width: 20px;
   height: 20px;
   background-color: #7DB54F;
@@ -280,13 +295,13 @@ button {
 .intro {
   background-image: url("../images/backgrounds/background-triangle-index.svg"), url("../images/backgrounds/background-index.jpg");
   text-align: center;
-  padding-top: 65px;
+  padding-top: 51px;
   background-position-x: 50%;
   background-position-y: 100%;
   background-repeat: no-repeat;
-  background-size: auto, 1200px 487px;
+  background-size: auto, 1200px 485px;
   box-sizing: border-box;
-  min-height: 487px
+  min-height: 485px
 }
 
 /* Advantages List */
@@ -295,7 +310,7 @@ button {
 }
 .advantages-section-header {
   box-sizing: border-box;
-  padding: 63px 40px 90px;
+  padding: 63px 40px 60px;
 }
 .advantages-section-title {
   width: 620px;
@@ -304,7 +319,7 @@ button {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto 30px;
+  margin: 0 auto 31px;
 }
 .advantages-section-subtitle {
   width: 655px;
@@ -342,14 +357,12 @@ button {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-right: 110px;
-  padding-left: 110px;
-  margin-top: 103px;
-  margin-bottom: 29px;
+  width: 180px;
+  margin: 103px auto 29px;
 }
 .advantages-tile {
   width: 400px;
-  padding: 90px 0 56px 0;
+  padding: 90px 10px 56px;
   box-sizing: border-box;
   background: #82B3D3;
   color: #ffffff;
@@ -357,13 +370,11 @@ button {
 .advantages-tile .advantages-title {
   margin-top: 3px;
   margin-bottom: 29px;
-  padding-right: 85px;
-  padding-left: 85px;
 }
 
 .advantages-description {
-  padding-left: 85px;
-  padding-right: 85px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 .advantages-description::before {
   content: "— №" counter(advantage_counter) " —";
@@ -419,7 +430,8 @@ button {
   background-image: url("../images/icons/advantages/icon-food.svg");
 }
 .advantages-feature.souvenirs .advantages-feature-title::before {
-  top: 78px;
+  top: 79px;
+  left: 167px;
   background-image: url("../images/icons/advantages/icon-souvenirs.svg");
 }
 
@@ -431,7 +443,7 @@ button {
 .search-hotels {
   text-align: center;
   box-sizing: border-box;
-  padding: 91px 40px 93px;
+  padding: 90px 40px 93px;
 }
 .search-title {
   font-size: 30px;
@@ -449,7 +461,7 @@ button {
   font-weight: 400;
   color: #333333;
   margin: 0 auto 56px;
-  width: 650px;
+  width: 600px;
   text-align: center;
 }
 
@@ -499,7 +511,7 @@ button {
   width: 600px;
   height: 60px;
   box-sizing: border-box;
-  padding: 12px 10px 12px 23px;
+  padding: 12px 10px 12px 22px;
   border: none;
   border-radius: 10px 0 0 10px;
   color: #000000;
@@ -537,7 +549,7 @@ button {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 6px;
+  margin-top: 5px;
 }
 .footer-social-item {
   box-sizing: border-box;
@@ -551,9 +563,12 @@ button {
   align-items: center;
   height: 100%;
 }
-
 .button-socials {
   color: #83B3D3;
+}
+.button-socials:focus {
+  color: #68A2CA;
+  outline: none;
 }
 .button-socials:hover {
   color: #68A2CA;
@@ -575,8 +590,11 @@ button {
   color: #000000;
   text-decoration: none;
 }
-.footer-contacts-phone:hover,
 .footer-contacts-phone:focus {
+  color: #756157;
+  outline: none;
+}
+.footer-contacts-phone:hover {
   color: #756157;
 }
 .footer-contacts-phone:active {
@@ -591,8 +609,11 @@ button {
   display: block;
   color: #000000;
 }
-.htmlacademy-link:hover,
 .htmlacademy-link:focus {
+  color: #756157;
+  outline: none;
+}
+.htmlacademy-link:hover {
   color: #756157;
 }
 .htmlacademy-link:active {
@@ -1126,16 +1147,17 @@ button {
   background-image: url("../images/icons/icon-close.svg");
   background-repeat: no-repeat;
 }
-.modal-close-button:active .icon-close {
-  opacity: 0.3;
-}
-.modal-close-button:active,
-.modal-close-button:hover {
-  background-color: #E6E6E6;
-}
 .modal-close-button:focus {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
+}
+.modal-close-button:hover,
+.modal-close-button:active
+{
+  background-color: #E6E6E6;
+}
+.modal-close-button:active .icon-close {
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -1148,8 +1170,15 @@ button {
 
 .modal-hotel-search-form {
   display: grid;
-  grid-template-columns: 155px 133px 57px 97px 133px;
+  grid-template-columns: 155px 133px 57px 54px 43px 133px;
   grid-template-rows: 50px 40px 50px 40px 50px 100px;
+}
+.modal-hotel-search-form .modal-label {
+  display: block;
+  padding-top: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .date-field {
@@ -1168,6 +1197,7 @@ button {
 }
 .date-field .date-value {
   flex-grow: 1;
+  opacity: 0.6;
 }
 .date-field .calendar {
   align-self: center;
@@ -1179,19 +1209,19 @@ button {
   background-repeat: no-repeat;
   opacity: 0.3;
 }
-.date-field .date-value {
-  opacity: 0.6;
+.date-field:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+.date-field:hover {
+  background-color: #E6E6E6;
 }
 .date-field:active {
   background-color: #FFFFFF;
   outline: 2px solid #000000;
 }
-.date-field:hover {
-  background-color: #E6E6E6;
-}
-.date-field:focus {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+.date-field:active .date-value {
+  opacity: unset;
 }
 
 .modal-hotel-search-form .field-info {
@@ -1207,30 +1237,23 @@ button {
   background-color: #F2F2F2;
   display: flex;
   border-radius: 4px;
+  padding: 0 13px;
 }
 .counter-button-wrapper {
-  min-width: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding-top: 12px;
 }
 .counter-button {
   width: 19px;
   height: 19px;
-  padding: 3px;
+  padding: 2px 3px 4px 3px;
   border: none;
   border-radius: 4px;
+  margin: 3px;
 }
 .counter-button:focus {
   outline: 3px solid #83B3D3;
-}
-
-.modal-hotel-search-form label {
-  height: 50px;
-  padding-top: 11px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
 }
 
 .counter-button .decrement,
@@ -1248,10 +1271,10 @@ button {
 .counter-button .increment {
   background-image: url("../images/icons/icon-plus.svg");
 }
-.counter-button:hover .decrement,
-.counter-button:hover .increment,
 .counter-button:focus .decrement,
-.counter-button:focus .increment {
+.counter-button:focus .increment,
+.counter-button:hover .decrement,
+.counter-button:hover .increment {
   opacity: unset;
 }
 .counter-button:active .decrement,
@@ -1261,6 +1284,8 @@ button {
 
 .count-input {
   width: 100%;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
   background-color: #F2F2F2;
   border: none;
@@ -1269,8 +1294,10 @@ button {
 .children-label {
   grid-column: 4;
 }
+
 .tooltip-toggle {
-  display: inline-block;
+  position: relative;
+  margin-top: 14px;
   width: 25px;
   height: 25px;
   background-color: #83B3D3;
@@ -1278,8 +1305,6 @@ button {
   background-image: url("../images/icons/icon-info.svg");
   background-position: center center;
   background-repeat: no-repeat;
-  vertical-align: middle;
-  position: relative;
   border: none;
   outline: none;
 }
@@ -1323,6 +1348,8 @@ button {
 }
 
 .button-submit {
+  font-size: 20px;
+  line-height: 36px;
   border: none;
   border-radius: 10px;
   margin-top: 40px;
