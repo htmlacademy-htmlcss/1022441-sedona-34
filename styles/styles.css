@@ -951,6 +951,9 @@ input {
   color: #000000;
   text-decoration: none;
 }
+.hotel-card-link:focus {
+  outline: none;
+}
 .hotel-card-image {
   display: block;
 }
@@ -1025,10 +1028,13 @@ input {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  padding: 18px 3px 19px;
+  line-height: 58px;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+}
+.pagination-link:focus {
+  outline: none;
 }
 .pagination-item.current {
   background-color: #F2F2F2;
@@ -1065,14 +1071,16 @@ pagination-label {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
+.button-view:focus {
+  border-color: #68A2CA;
+  outline: none;
+}
 .button-view:hover,
 .button-view:active,
 .button-view.view-current {
   border: 2px solid #000000;
 }
-.button-view:focus {
-  border-color: #68A2CA;
-}
+
 
 /* Checkbox Control */
 .control {
