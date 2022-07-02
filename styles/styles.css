@@ -571,6 +571,7 @@ body {
   flex-grow: 1;
   text-align: center;
   margin: 3px 0 0 0;
+  padding: 0;
 }
 .footer-contacts-phone {
   display: block;
@@ -625,7 +626,8 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  margin-bottom: 9px;
+  margin: 0 0 9px 0;
+  padding: 0;
 }
 
 /* Breadcrumb */
@@ -1221,6 +1223,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  text-transform: capitalize;
 }
 
 .date-field {
