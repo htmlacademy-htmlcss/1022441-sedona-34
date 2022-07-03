@@ -263,6 +263,7 @@ body {
 }
 .intro {
   background-image: url("../images/backgrounds/background-triangle-index.svg"), url("../images/backgrounds/background-index.jpg");
+  background-color: #B1C0D3;
   text-align: center;
   padding-top: 51px;
   background-position-x: 50%;
@@ -455,10 +456,14 @@ body {
 .subscription,
 .subscription-inner {
   background-image: url("../images/backgrounds/background-subscribe.jpg");
+  background-color: #4D7899;
   text-align: center;
   color: #FFFFFF;
   box-sizing: border-box;
   padding: 94px 40px 94px;
+}
+.subscription-inner {
+  background-color: #FFFFFF;
 }
 .subscription-title {
   font-size: 30px;
@@ -618,6 +623,7 @@ body {
   background-image: url("../images/backgrounds/background-catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #4D7899;
   box-sizing: border-box;
   color: #FFFFFF;
   padding: 35px 70px 70px;
