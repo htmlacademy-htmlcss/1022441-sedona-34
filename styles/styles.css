@@ -617,6 +617,7 @@ body {
 .inner-header {
   background-image: url("../images/backgrounds/background-catalog.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   box-sizing: border-box;
   color: #FFFFFF;
   padding: 35px 70px 70px;

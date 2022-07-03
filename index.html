@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 <body>
   <div class="wrapper">
     <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
     <header class="page-header">
-      <a class="page-header-logo"><img src="images/logo/city-of-sedona-logo.svg" width="139" height="70" alt="Логотип Седона"></a>
+      <a class="page-header-logo"><img src="images/logo/city-of-sedona-logo.svg" width="139" height="70" alt="Логотип Седона."></a>
       <nav class="navigation">
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="navigation-list">
@@ -44,7 +45,7 @@
     </header>
     <main class="main-container main-index">
       <div class="intro">
-        <img class="intro-banner-text" src="images/backgrounds/welcome-text.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona">
+        <img class="intro-banner-text" src="images/backgrounds/welcome-text.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona.">
       </div>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
@@ -58,7 +59,7 @@
               <h3 class="advantages-title">Настоящий городок</h3>
               <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="advantages-image" src="images/photos/photo-01.jpg" width="800" height="384" alt="Седона — не аттракцион для туристов, там течёт своя жизнь">
+            <img class="advantages-image" src="images/photos/photo-01.jpg" width="800" height="384" alt="Седона — не аттракцион для туристов, там течёт своя жизнь.">
             <ul class="advantages-features">
               <li class="advantages-feature home">
                 <h3 class="advantages-feature-title">Жильё</h3>
@@ -75,7 +76,7 @@
             </ul>
           </li>
           <li class="advantages-item has-image">
-            <img class="advantages-image" src="images/photos/photo-02.jpg" width="800" height="384" alt="Мост дьявола">
+            <img class="advantages-image" src="images/photos/photo-02.jpg" width="800" height="384" alt="Мост дьявола.">
             <div class="advantages-tile">
               <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
               <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь,<br>разумеется</p>
@@ -105,8 +106,9 @@
         <h2 class="visually-hidden">Форма подписки на рассылку</h2>
         <p class="subscription-title">Подпишитесь на рассылку</p>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru" class="subscription-form" method="post">
-          <input class="subscription-form-input" type="email" name="subscription-form-email" placeholder="Ваш e-mail">
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="subscription-form-email" class="visually-hidden">Ваш e-mail</label>
+          <input class="subscription-form-input" type="email" name="subscription-form-email" id="subscription-form-email" placeholder="Ваш e-mail">
           <button class="button button-blue subscription-button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
       </section>
@@ -166,7 +168,7 @@
       </p>
     </footer>
   </div>
-  <div class="modal-container">
+  <div class="modal-container" style="display: none">
     <div class="modal modal-hotel-search">
       <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
@@ -174,16 +176,16 @@
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <form class="modal-hotel-search-form">
+        <form class="modal-hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="date_in" class="modal-label">Дата заезда:</label>
-          <input type="hidden" name="date_in" />
+          <input type="hidden" name="date_in" value="2020-04-27" required />
           <button id="date_in" class="date-field" type="button">
             <span class="date-value">27 апреля 2020</span>
             <span class="calendar"></span>
           </button>
           <p class="field-info error">Мы не можем отправить вас в прошлое.</p>
           <label for="date_out" class="modal-label">Дата выезда:</label>
-          <input type="hidden" name="date_out" />
+          <input type="hidden" name="date_out" value="2021-09-01" required />
           <button id="date_out" class="date-field" type="button">
             <span class="date-value">1 сентября 2021</span>
             <span class="calendar"></span>
