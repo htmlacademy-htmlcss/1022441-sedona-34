@@ -168,7 +168,7 @@
       </p>
     </footer>
   </div>
-  <div class="modal-container" style="display: none">
+  <div class="modal-container">
     <div class="modal modal-hotel-search">
       <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
@@ -178,41 +178,25 @@
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="modal-hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="date_in" class="modal-label">Дата заезда:</label>
-          <input type="hidden" name="date_in" value="2020-04-27" required />
-          <button id="date_in" class="date-field" type="button">
-            <span class="date-value">27 апреля 2020</span>
-            <span class="calendar"></span>
-          </button>
+          <input type="text" name="date_in" id="date_in" value="27 апреля 2020" class="date-field" required />
           <p class="field-info error">Мы не можем отправить вас в прошлое.</p>
           <label for="date_out" class="modal-label">Дата выезда:</label>
-          <input type="hidden" name="date_out" value="2021-09-01" required />
-          <button id="date_out" class="date-field" type="button">
-            <span class="date-value">1 сентября 2021</span>
-            <span class="calendar"></span>
-          </button>
+          <input type="text" name="date_out" id="date_out" value="1 сентября 2021" class="date-field" required />
           <p class="field-info">На эти даты есть свободные номера. Пока есть.</p>
           <label for="adults" class="modal-label">Взрослые:</label>
           <div class="count-field">
-            <div class="counter-button-wrapper">
-              <button type="button" class="counter-button"><span class="decrement"></span></button>
-            </div>
+            <button type="button" class="counter-button"><span class="decrement"></span></button>
             <input id="adults" name="adults" type="text" class="count-input" value="2" />
-            <div class="counter-button-wrapper">
-              <button type="button" class="counter-button"><span class="increment"></span></button>
-            </div>
+            <button type="button" class="counter-button"><span class="increment"></span></button>
           </div>
           <label for="children" class="modal-label children-label">Дети:</label>
           <button class="tooltip-toggle" type="button" aria-labelledby="children-tooltip-label">
             <span class="children-info-popup" role="tooltip" id="children-tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
           </button>
           <div class="count-field">
-            <div class="counter-button-wrapper">
-              <button type="button" class="counter-button"><span class="decrement"></span></button>
-            </div>
+            <button type="button" class="counter-button"><span class="decrement"></span></button>
             <input id="children" name="children" type="text" class="count-input" value="1" />
-            <div class="counter-button-wrapper">
-              <button type="button" class="counter-button"><span class="increment"></span></button>
-            </div>
+            <button type="button" class="counter-button"><span class="increment"></span></button>
           </div>
           <button type="submit" class="button button-blue button-submit">Найти</button>
         </form>

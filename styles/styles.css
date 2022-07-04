@@ -1221,10 +1221,11 @@ body {
 
 .modal-hotel-search-form {
   display: grid;
-  grid-template-columns: 155px 133px 57px 54px 43px 133px;
+  grid-template-columns: 155px 133px 56px 54px 44px 133px;
   grid-template-rows: 50px 40px 50px 40px 50px 100px;
 }
-.modal-hotel-search-form .modal-label {
+
+.modal-label {
   display: block;
   padding-top: 12px;
   font-weight: 700;
@@ -1236,7 +1237,7 @@ body {
 .date-field {
   display: flex;
   box-sizing: border-box;
-  padding: 0 19px;
+  padding: 0 53px 0 19px;
   background-color: #F2F2F2;
   border-radius: 4px;
   grid-column: 2/-1;
@@ -1247,21 +1248,13 @@ body {
   line-height: 40px;
   border: none;
   align-items: center;
-}
-.date-field .date-value {
-  flex-grow: 1;
+  background-image: url("../images/icons/icon-calendar.svg");
+  background-position: top 50% right 19px;
+  background-repeat: no-repeat;
+  color: #000000;
   opacity: 0.6;
 }
-.date-field .calendar {
-  align-self: center;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url("../images/icons/icon-calendar.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-}
+
 .date-field:focus {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
@@ -1272,6 +1265,7 @@ body {
 .date-field:active {
   background-color: #FFFFFF;
   outline: 2px solid #000000;
+  opacity: unset;
 }
 .date-field:active .date-value {
   opacity: unset;
@@ -1282,29 +1276,27 @@ body {
   grid-column: 2/-1;
   margin: 8px 0 0 0;
   padding: 0;
+  color: #333333;
 }
 .field-info.error {
   color: #FF5757;
 }
 
 .count-field {
-  background-color: #F2F2F2;
   display: flex;
+  background-color: #F2F2F2;
   border-radius: 4px;
   padding: 0 13px;
 }
-.counter-button-wrapper {
-  display: flex;
-  justify-content: center;
-  padding-top: 12px;
-}
+
 .counter-button {
-  width: 19px;
-  height: 19px;
-  padding: 2px 3px 4px 3px;
+  display: block;
+  align-self: flex-start;
+  padding: 3px;
   border: none;
   border-radius: 4px;
-  margin: 3px;
+  margin: 15px 3px 0 3px;
+  background-color: transparent;
 }
 .counter-button:focus {
   outline: 3px solid #83B3D3;
@@ -1312,10 +1304,10 @@ body {
 
 .counter-button .decrement,
 .counter-button .increment {
-  display: inline-block;
+  display: block;
   width: 13px;
   height: 13px;
-  background-position: center center;
+  background-position: top 50% left 50%;
   background-repeat: no-repeat;
   opacity: 0.3;
 }
@@ -1345,6 +1337,7 @@ body {
   background-color: #F2F2F2;
   border: none;
   outline: none;
+  padding: 0 1px 0 0;
 }
 .children-label {
   grid-column: 4;
