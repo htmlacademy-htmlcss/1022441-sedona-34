@@ -1165,6 +1165,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 200;
 }
+.modal-container.hide {
+  display: none;
+}
 .modal {
   box-sizing: border-box;
   position: relative;
