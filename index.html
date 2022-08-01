@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <script defer type="text/javascript" src="scripts/modalDialog.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -100,7 +101,7 @@
         <h2 class="visually-hidden">Поиск отеля</h2>
         <p class="search-title">Заинтересовались?</p>
         <p class="search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button button-brown search-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <button class="button button-brown search-button js-open-modal" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
       <section class="subscription">
         <h2 class="visually-hidden">Форма подписки на рассылку</h2>
@@ -168,9 +169,9 @@
       </p>
     </footer>
   </div>
-  <div class="modal-container">
+  <div class="modal-container hide">
     <div class="modal modal-hotel-search">
-      <button class="modal-close-button" type="button">
+      <button class="modal-close-button js-modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
         <span class="icon-close"></span>
       </button>
